@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ever-growing!-main</title>
+     <!--이미지로드-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+     <!-- 제이쿼리 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+     <!-- 폰트어썸 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+     <!-- 테일윈드 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+   
+     <!--애니메이션,와우-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+     <!--스와이퍼-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+     <script>new WOW().init();</script>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+   
+  <style>
+    /* 폰트적용 */
+    @font-face {
+        font-family: 'LeferiBaseType-RegularA';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    html > body {
+      font-family: "LeferiBaseType-RegularA";
+    }
+    
+    /*커스텀 라이브러리*/
+    *{
+      padding:0;
+      margin:0;
+    }
+    
+    .con{
+      width:1920px;
+      height:auto;
+      margin:0 auto;
+    }
+    
+    @media ( min-width: 1900px ) {
+      body { overflow-x:hidden; }
+    }
+    
+    /*뜨는애니메이션 라이브러리*/
+    
+    .main-1,.main-2{
+      animation-name: infinite-01 ;
+      animation-duration: 5s;
+      animation-iteration-count: infinite ;
+      animation-timing-function: linear ; 
+    }
+    
+    
+    @keyframes infinite-01{
+      0%{
+        transform: translatey(0) ;
+      }
+      
+      50%{
+        transform: translatey(-20%);    
+      }
+      
+      100%{
+        transform: translatey(0);    
+      }
+      
+    }
+    
+    .about-1{
+      background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-1-bg-new (1).png');
+      width:1920px;
+      height:1080px;
+    }
+    
+    .about-menu-logo-1{
+      left:100px;
+      top:30px;
+    }
+    
+    .about-menu-branding{
+      left:526px;
+      top:41px;
+    }
+    
+    .about-menu-about{
+      left:721px;
+      top:41px;
+    }
+    .about-menu-portfolio{
+     left:885px;
+      top:41px;
+    }
+    
+    .about-menu-process{
+      
+       left:1090px;
+      top:41px;
+    }
+    
+    .about-menu-experience{
+       left:1278px;
+      top:41px;
+    }
+    
+    .about-1-img{
+      top:694px;
+      left:29px;
+    }
+    
+    .about-1-img-2{
+       top:250px;
+      left:1180px;
+    }
+    
+    .about-1-img-3{
+      top:285px;
+      left:677px;
+    }
+    
+    .about-1-img-4{
+      top:540px;
+      left:340px;
+    }
+    
+    .about-2{
+      width:1920px;
+      height:1221px;
+      background-color:#EEEEEE;
+    }
+    
+    .about-2-text{
+      top:100px;
+      left:150px;
+      
+    }
+    
+    .about-2-img{
+      top:301px;
+      left:352px;
+      
+    }
+    
+    .about-3{
+      width:1920px;
+      height:1221px;
+      background-color:#EEEEEE;
+    }
+    
+    .about-3-text{
+    
+    top:100px;
+    left:158px;
+    }
+    
+    .about-3-img-1{
+      top:363px;
+      left:158px;
+    }
+    
+    .about-3-img-2{
+      top:435px;
+      left:1034px;
+    }
+    .about-3-img-3{
+      top:666px;
+      left:1034px;
+    }
+    
+    .about-3-img-4{
+      top:918px;
+    left:1034px;
+    }
+    
+    .about-4{
+      background-color:#F62F68;
+      width:1920px;
+      height:700px;
+    }
+    
+    .about-4-text{
+      top:40px;
+      left:434px;
+    }
+    
+    .about-4-img-1{
+      top:158px;
+      left:434px;
+    }
+    .about-4-img-2{
+      top:481px;
+      left:439px;
+    }
+    
+    .about-5{
+      width:1920px;
+      height:1079px;
+      background-color:#ffffff;
+    }
+    .about-5-text{
+      left:205px;
+      top:100px;
+    }
+    .about-5-img-1{
+      left:205px;
+      top:268px;
+    }
+    
+    .about-5-img-2{
+      left:1019px;
+      top:268px;
+    }
+    
+    .about-5-img-3{
+      left:1019px;
+      top:540px;
+    }
+    
+    .about-5-img-4{
+      left:1019px;
+      top:812px;
+    }
+    
+    .see-me-por{
+      width:1920px;
+      height:300px;
+      background-color:#F4F4F4;
+    }
+    
+    .see-me-por-1{
+      top:86px;
+      left:797.1px;
+    }
+    .top{
+     top:150px;
+      left:1790px;
+    }</style>
+  </head>
+  <section class="con ">
+    <section class="about-1 relative">
+      <div class="about-1-menu-box">
+   
+            <div class="about-1-menu">
+  
+          <span class="about-menu-logo-1 absolute">
+            <a href="#"> <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/로고.png" alt=""></a>
+          </span>
+          <span class="about-menu-branding absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/BRANDING.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/BRANDING-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/BRANDING.png'"></a></span>
+        <span class="about-menu-about absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/ABOUT.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/ABOUT-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/ABOUT.png'"></a></span>
+          <span class="about-menu-portfolio absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/PORTFOLIO.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/PORTFOLIO-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/PORTFOLIO.png'"></a></span>
+         <span class="about-menu-process absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/PROCESS.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/PROCESS-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/PROCESS.png'"></a></span>
+          <span class="about-menu-experience absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/EXPERIENCE.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/EXPERIENCE-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/EXPERIENCE.png'"></a></span>
+  
+        </div>
+           
+   
+      </div>
+      <div class="about-1-img-box">
+        <span class="about-1-img absolute wow fadeInDown">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-1-bg-new (5).png" alt="">
+        </span>
+           <span class="about-1-img-2 wow fadeInRight absolute">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-1-bg-new (2).png" alt="">
+        </span>
+         <span class="about-1-img-3 absolute wow fadeInDown"data-wow-delay="0.2s">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-1-bg-new (3).png" alt="">
+        </span>
+        <span class="about-1-img-4 absolute wow fadeInUp"data-wow-delay="0.5s">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-1-bg-new (4).png" alt="">
+        </span>
+      </div>
+    </section>
+     
+    <section class="about-3 relative">
+      <span class="about-3-text absolute wow fadeInUp"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-3-text-new-1.png" alt=""></span>
+      <span class="about-3-img-1 absolute wow fadeInDown"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-3-img-1.png" alt=""></span>
+      <span class="about-3-img-2 absolute wow fadeInRight"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-3-img-2-new.png" alt=""></span>
+      <span class="about-3-img-3 absolute wow fadeInRight"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-3-img-3-new.png" alt=""></span>
+         <span class="about-3-img-4 absolute wow fadeInRight"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-3-img-4-new.png" alt=""></span>
+    </section>
+    <section class="about-4 relative">
+      <span class="about-4-text absolute wow fadeInUp">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-4-text.png" alt="">
+      </span>
+      <span class="about-4-img-1 absolute wow fadeInUp">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-4-img-1-new.png" alt="">
+      </span>
+         <span class="about-4-img-2 absolute wow fadeInDown">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-4-img-2-new.png" alt="">
+      </span>
+    </section>
+    <section class="about-5 relative">
+       <span class="about-5-text absolute wow fadeInUp">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-5-text.png" alt="">
+      </span>
+        <span class="about-5-img-1 absolute wow fadeInDown">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/about-5-img-1-new.png" alt="">
+      </span>
+      <span class="about-5-img-2 absolute wow fadeInRight">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/Group 259.png" alt="">
+        </span>
+         <span class="about-5-img-3 absolute wow fadeInRight">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/Group 260.png" alt="">
+      </span>
+      <span class="about-5-img-4 absolute wow fadeInRight">
+      <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/Group 261.png" alt="">
+      </span>
+    </section>
+    <section class="see-me-por relative">
+      <span class="see-me-por-1 absolute">
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/see me Port.png" alt=""></a>
+      </span>
+       <span class="top absolute">
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/about/Group 236.png" alt=""></a>
+      </span>
+    </section>
+  </section>
